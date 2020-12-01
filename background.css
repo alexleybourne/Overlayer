@@ -1,0 +1,17 @@
+body {
+    width: 200px;
+    height: 400px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #24A3FF;
+}
+
+.logo {
+    height: 32px;
+    width: 32px;
+    margin-right: 1px;
+}
