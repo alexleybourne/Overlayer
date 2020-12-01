@@ -1,4 +1,9 @@
-let list = [{url: "https://www.google.com/", title: "Google"}, {url: "https://github.com/alexleybourne", title: "Alex Leybourne"}, {url: "google*", title: "Google"}]
+let list = [
+    {url: "https://www.google.com/", title: "Google"},
+    {url: "https://github.com/alexleybourne", title: "Alex Leybourne"},
+    {url: "localhost*", title: "LocalHost"},
+    {url: "uat*", title: "UAT"},
+]
 
 chrome.storage.local.set({ "sites": list }, function(){});
 
