@@ -15,7 +15,7 @@
         }
     ],
     "background": {
-        "scripts": ["background.js", "hot-reload.js"],
+        "scripts": ["background.js", "hot-reload.js", "popup.js"],
         "persistent": false
     },
     "browser_action": {
