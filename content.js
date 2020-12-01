@@ -1,8 +1,7 @@
-
-console.log('LOADED THIS SHIz')
 console.log(window.location.toString())
 
 const currentUrl = window.location.toString()
+
 
 chrome.storage.local.get(/* String or Array */["sites"], function(items){
     console.log(items)
@@ -10,9 +9,12 @@ chrome.storage.local.get(/* String or Array */["sites"], function(items){
     console.log(items.sites.length)
     for(let i = 0; i < items.sites.length; i++){ 
         console.log(items.sites[i]);
-        if (items.sites[i].url === currentUrl){
-            console.log('THIS SITE IS LISTED');
+        if (items.sites[i].url.includes('*') && currentUrl.includes(items.sites[i].url.replace('*',''))) {
             addBanner(items.sites[i].title)
+        }
+        else if (items.sites[i].url === currentUrl){
+            addBanner(items.sites[i].title)
+            // chrome.runtime.sendMessage({icon1: true})
         }
     }
 })
