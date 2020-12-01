@@ -1,0 +1,65 @@
+body {
+    width: 200px;
+    height: 400px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #24A3FF;
+}
+
+.logo {
+    height: 32px;
+    width: 32px;
+    margin-right: 1px;
+}
+
+span {
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+p { 
+    margin: 2px; 
+}
+
+.item {
+    cursor: pointer;
+    background: #24A3FF;
+    color: white;
+    border-radius: 10px;
+    padding: 4px;
+    width: 90%;
+    margin: 4px;
+}
+
+.url {
+    font-size: 10px;
+}
+
+.item .title {
+    font-weight: bold;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #24A3FF;
+}
+
+
