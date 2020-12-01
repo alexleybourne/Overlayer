@@ -2,7 +2,6 @@
     top: 0;
     position: absolute;
     z-index: 10000;
-    background: rgba(247, 39, 39, 0.461);
     color: white;
     height: 50px;
     width: 100%;
@@ -13,6 +12,17 @@
     animation-name: bannerAnimation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+.overlayer-banner div {
+    background: rgba(247, 39, 39, 0.68);
+    backdrop-filter: blur(2px);
+    border-radius: 100px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlayer-banner h1 {
@@ -29,8 +39,8 @@
 }
 
 @keyframes bannerAnimation {
-    from {transform: translateY(-100px); opacity: 0;}
-    to {transform: translateY(-50px); opacity: 1;}
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(4px); opacity: 1;}
 }
 
 @keyframes pageMove {

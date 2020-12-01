@@ -22,8 +22,10 @@ chrome.storage.local.get(/* String or Array */["sites"], function(items){
 
 const addBanner = (title) => {
     const banner = `<div class="overlayer-banner">
-                    <h1>${title}</h1>
-                </div>`;
+                        <div>
+                            <h1>${title}</h1>
+                        </div>
+                    </div>`;
     document.body.innerHTML += banner
-    document.body.classList += " page-has-overlayer-banner"
+    // document.body.classList += " page-has-overlayer-banner"
 }
