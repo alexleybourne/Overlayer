@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Overlay a banner onto websites",
     "short_name": "Overlayer",
-    "permissions": ["activeTab", "declarativeContent", "storage", "<all_urls>"],
+    "permissions": ["activeTab", "tabs", "declarativeContent", "storage", "<all_urls>"],
     "content_scripts":[
         {
           "matches":[
