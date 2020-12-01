@@ -1,0 +1,35 @@
+* {
+    transition-duration: 5s;
+    transition-delay: 1s;
+}
+
+.banner {
+    position: absolute;
+    z-index: 10000;
+    background: rgba(247, 39, 39, 0.461);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: bannerAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.pageHasBanner {
+    animation-name: pageMove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bannerAnimation {
+    from {transform: translateY(-100px); opacity: 0;}
+    to {transform: translateY(-50px); opacity: 1;}
+}
+
+@keyframes pageMove {
+    from {transform: translateY(0px);}
+    to {transform: translateY(50px);}
+}

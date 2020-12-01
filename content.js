@@ -14,6 +14,11 @@ chrome.storage.local.get(/* String or Array */["sites"], function(items){
     }
 });
 
+const banner = `<div class="banner showBanner">
+                    <h1>TEST</h1>
+                </div>`;
+
 const addBanner = () => {
-    alert('POGGERS');
+    document.body.innerHTML += banner
+    document.body.classList += " pageHasBanner"
 }

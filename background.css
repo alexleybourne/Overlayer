@@ -15,3 +15,7 @@ body {
     width: 32px;
     margin-right: 1px;
 }
+
+.banner {
+    background: red;
+}
