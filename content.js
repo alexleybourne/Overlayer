@@ -6,19 +6,22 @@ const currentUrl = window.location.toString()
 
 chrome.storage.local.get(/* String or Array */["sites"], function(items){
     console.log(items)
-    if (Object.values(items).indexOf(currentUrl) > -1) {
-        console.log('THIS SITE IS LISTED');
-        addBanner()
-    } else {
-        console.log('THIS SITE IS NOT');
+    console.log(items.sites)
+    console.log(items.sites.length)
+    for(let i = 0; i < items.sites.length; i++){ 
+        console.log(items.sites[i]);
+        if (items.sites[i].url === currentUrl){
+            console.log('THIS SITE IS LISTED');
+            addBanner(items.sites[i].title)
+        }
     }
-});
+})
 
-const banner = `<div class="banner showBanner">
-                    <h1>TEST</h1>
+
+const addBanner = (title) => {
+    const banner = `<div class="banner showBanner">
+                    <h1>${title}</h1>
                 </div>`;
-
-const addBanner = () => {
     document.body.innerHTML += banner
     document.body.classList += " pageHasBanner"
 }

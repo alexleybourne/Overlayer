@@ -1,3 +1,2 @@
-chrome.storage.local.set({ "sites": "https://www.google.com/" }, function(){
-    //  Data's been saved boys and girls, go on home
+chrome.storage.local.set({ "sites": [{url: "https://www.google.com/", title: "Google"}, {url: "https://github.com/alexleybourne", title: "Alex Leybourne"}] }, function(){
 });

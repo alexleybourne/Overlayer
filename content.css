@@ -1,12 +1,8 @@
-* {
-    transition-duration: 5s;
-    transition-delay: 1s;
-}
-
 .banner {
     position: absolute;
     z-index: 10000;
     background: rgba(247, 39, 39, 0.461);
+    color: white;
     height: 50px;
     width: 100%;
     text-align: center;
